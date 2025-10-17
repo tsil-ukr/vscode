@@ -1,0 +1,78 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Ціль",
+  "patterns": [
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#strings"
+    },
+    {
+      "include": "#constants"
+    },
+    {
+      "include": "#comments"
+    },
+    {
+      "include": "#types"
+    }
+  ],
+  "repository": {
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.tsil",
+          "match": "\\b(дія|структура|або|і|пусто|стрибнути|не|так|ні|стала|якщо|поки|взяти визначення|взяти біб|взяти|як|вернути|інакше|зовнішня|місцева|внутрішня|секція|синонім|змінна|ціль)\\b"
+        }
+      ]
+    },
+    "strings": {
+      "name": "string.quoted.double.tsil",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.tsil",
+          "match": "\\\\."
+        }
+      ]
+    },
+    "constants": {
+      "patterns": [
+        {
+          "name": "constant.numeric.tsil",
+          "match": "\\b\\d+(\\.\\d+)?\\b"
+        }
+      ]
+    },
+    "types": {
+      "patterns": [
+        {
+          "name": "support.type.primitive.tsil",
+          "match": "\\b(ц8|ц16|ц32|ц64|ціле|п8|п16|п32|п64|т8|ю8|вміст|логічне|адреса|памʼять|невідома_адреса|натуральне|н8|н16|н32|н64|р32|р64|ніщо)\\b"
+        }
+      ]
+    },
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.line.tsil",
+          "match": "//.*$"
+        },
+        {
+          "name": "comment.block.tsil",
+          "begin": "/\\*",
+          "end": "\\*/",
+          "patterns": [
+            {
+              "match": "\\*/",
+              "name": "punctuation.definition.comment.end.tsil"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "scopeName": "source.ціль"
+}

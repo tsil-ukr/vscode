@@ -1,0 +1,62 @@
+{
+	"name": "tsil-vscode",
+	"displayName": "Ціль",
+	"description": "Підтримка Цілі в VSCode",
+	"publisher": "kdb",
+	"version": "0.1.0",
+	"icon": "images/logo.png",
+	"engines": {
+		"vscode": "^1.71.0"
+	},
+	"categories": [
+		"Programming Languages",
+		"Snippets"
+	],
+	"repository": {
+		"url": "https://github.com/tsil-ukr/vscode"
+	},
+	"contributes": {
+		"languages": [
+			{
+				"id": "ціль",
+				"aliases": [
+					"Ціль",
+					"ціль"
+				],
+				"extensions": [
+					".ц",
+					".в"
+				],
+				"configuration": "./language-configuration.json",
+				"icon": {
+					"light": "./icons/icon-light.png",
+					"dark": "./icons/icon-dark.png"
+				}
+			}
+		],
+		"grammars": [
+			{
+				"language": "ціль",
+				"scopeName": "source.ціль",
+				"path": "./syntaxes/tsil.tmLanguage.json"
+			}
+		],
+		"snippets": [
+			{
+				"language": "ціль",
+				"path": "./snippets/tsil.snippets.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "8c2adcf7-0af5-47bc-861f-5a424d31fe53",
+		"publisherId": "600a6499-8063-4adf-92b1-b5b41744b726",
+		"publisherDisplayName": "КДБ",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"updated": true,
+		"isPreReleaseVersion": false,
+		"installedTimestamp": 1678613395515,
+		"preRelease": false
+	}
+}
