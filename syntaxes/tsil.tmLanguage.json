@@ -72,7 +72,7 @@
     },
     "attributes": {
       "name": "entity.other.attribute-name.tsil",
-      "match": "\\\\[a-zA-Zа-яА-ЯіІїЇєЄґҐ_][a-zA-Zа-яА-ЯіІїЇєЄґҐ0-9_]*"
+      "match": "\\@[a-zA-Zа-яА-ЯіІїЇєЄґҐ_][a-zA-Zа-яА-ЯіІїЇєЄґҐ0-9_]*"
     }
   },
   "scopeName": "source.ціль"
