@@ -3,7 +3,7 @@
 	"displayName": "Ціль",
 	"description": "Підтримка Цілі в VSCode",
 	"publisher": "tsil",
-	"version": "0.2.1",
+	"version": "0.3.0",
 	"icon": "images/logo.png",
 	"engines": {
 		"vscode": "^1.71.0"
@@ -24,7 +24,8 @@
 					"ціль"
 				],
 				"extensions": [
-					".ц"
+					".ц",
+					".к"
 				],
 				"configuration": "./language-configuration.json",
 				"icon": {
